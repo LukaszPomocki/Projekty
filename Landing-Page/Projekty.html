@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styll.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="wraper-head">
+            <div class="imie"><Strong><a href="Index.html">Moje Portfolio</a></Strong></div>
+            <div class="lista-menu">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Mnie.html">O mnie</a></li>
+                    <li><a href="Projekty.html">Projekty</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="#" class="Lista-CV">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <Main>
+                <div class="main__slider__container">
+
+                    <div class="mySlides fade">
+                        <div class="main__karta">
+                            <a href="../Projekt1/Index.html" target="_blank"><img src="Strona1.png"></a>
+                            <div class="karta__tekst">
+                                <h4>Strona sklepu zoologicznego</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="main__karta">
+                            <a href="../Projekt2/Index.html" target="_blank"><img src="Strona2.png"></a>
+                            <div class="karta__tekst">
+                                <h4>Strona sklepu elektronicznego</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="main__karta">
+                            <a href="../Projekt3/Index.html" target="_blank"><img src="Strona3.png"></a>
+                            <div class="karta__tekst">
+                                <h4>Strona szkolna</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+                        </script>
+    </Main>
+</body>
+</html>
