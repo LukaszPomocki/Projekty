@@ -121,6 +121,7 @@ h2{
 
 span{
     color: var(--tekst-kolor);
+    font-size: var(--rozmiar-2xl);
 }
 
 /* Main Projekty */
@@ -232,8 +233,23 @@ img{
     border-radius: var(--rozmiar-xxs);
 }
 
-@media (min-width: 475px) {
-    
+/* Main O mnie */
+
+.mnie{
+    font-size: var(--rozmiar-3xl);
+}
+
+.mnie h3{
+    color: var(--akcent-kolor);
+}
+
+/* Media */
+
+@media (max-width: 475px) {
+
+        .tresc{
+        padding: 0.5em 3em;
+        }
 }
 
 @media (min-width: 640px) {
@@ -249,7 +265,17 @@ img{
     .Lista-CV{
         padding: 1em;
     }
+
+    
 }
+
+@media (max-width: 640px){
+    h1{
+        font-size: var(--rozmiar-3xl);
+    }
+}
+
+
 
 @media (min-width: 768px) {
     .imie{
