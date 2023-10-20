@@ -756,34 +756,7 @@
             <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
           
-          <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
+          <script src="Slider.js"></script>
         
       </div>
 
@@ -823,23 +796,7 @@
                  gatunków ptaków, które zamieszkują ekosystemy na całym świecie. Ich wielkość waha się od 5 cm u koliberka hawańskiego do 2,7 m u strusia.</p>
             </div>
                 </div>
-                <script>
-                  
-                  var coll = document.getElementsByClassName("artykuly__collapse");
-                  var i;
-
-                  for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                      this.classList.toggle("active");
-                      var content = this.nextElementSibling;
-                      if (content.style.display === "block") {
-                        content.style.display = "none";
-                      } else {
-                        content.style.display = "block";
-                      }
-                    });
-                  }
-                </script>
+                <script src="Rozwiniecie.js"></script>
     <footer>
     <div class="footer__wraper">
       <div class="footer__lista">
