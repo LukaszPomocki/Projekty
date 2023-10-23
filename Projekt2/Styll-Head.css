@@ -25,6 +25,8 @@ html, body{
 
 }
 
+/* Header */
+
 header{
     height: auto;
     width: 100%;
@@ -139,6 +141,7 @@ header{
 .header__lista a:hover{
     color: var(--tlo-szary);
 }
+
 /* nav */
 
 nav{
@@ -427,10 +430,21 @@ footer{
     }
 
     .main-prawy{
-        width: 100%;
+        width: 90%;
+        margin-top: 9em;
+        margin-left: 1.7em;
+    }   
+
+    .artykuly-cena h1{
+        font-size: var(--rozmiar-2xl);
     }
+
+    .artykuly-statystyki{
+        margin-left: 1em;
+    }
+
     nav{
-    display: none;
+        display: none;
     }
 }
 
