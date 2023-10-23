@@ -147,9 +147,9 @@ main{
   }
 
   .karta__tekst{
-    height: 10vh;
+    height: auto;
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
   
   /* Next & previous buttons */
@@ -164,6 +164,7 @@ main{
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
+    background-color: var(--glowny-color);
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
