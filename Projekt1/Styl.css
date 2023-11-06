@@ -8,8 +8,8 @@ html, body{
 :root{
 
     /* kolory */
-    --kolor-jasnynieb: rgb(128, 175, 251);
-    --kolor-ciemnynieb: rgb(123, 151, 195);
+    --kolor-jasnynieb: rgb(9, 42, 96);
+    --kolor-ciemnynieb: rgb(62, 90, 135);
     --kolor-kremowy: rgb(255, 255, 255);
     --kolor-fioletowy: rgb(83, 38, 104);
     --kolor-ciemnybialy: rgb(231, 226, 226);
@@ -115,7 +115,7 @@ html, body{
 
 
     .header__przyciski ul li:hover{
-        background-color: var(--kolor-ciemnybialy);
+        background-color: var(--kolor-ciemnynieb);
     }
 
     .header__przyciski svg{
@@ -133,7 +133,6 @@ html, body{
         display: flex;
         justify-content: center;
         align-items: center; 
-        
     }
 
     nav a{
@@ -143,6 +142,7 @@ html, body{
     .nav__psy, .nav__koty, .nav__gryzonie, .nav__akwarystyka, .nav__ptaki, .nav__liof{
         position: relative;
     }
+
 
 
     .nav__ul{
@@ -157,11 +157,10 @@ html, body{
     .nav__li, .nav__liof{
         padding: var(--rozmiar-xs) var(--rozmiar-base);
     }
-      
+
       .nav__rozwiniecie{
         display: none;
         position: absolute;
-        width: 80vw;
         padding: var(--rozmiar-xxxs);
         background-color: var(--czcionka-biala);
         z-index: 4;
@@ -185,18 +184,19 @@ html, body{
       .nav__li:hover .nav__rozwiniecie {
         display: block;
         display: grid;
+        margin-top: 5px;
         grid-template-columns: repeat(4, 1fr);
-        
         border-radius: var(--rozmiar-xxs);
-        left: 10vw;
-        right: 10vw;
-        top: 20vh;
+        left: 10%;
+        right: 10%;
       }
 
       .nav__lista ul li{
         font-size: var(--rozmiar-base);
         padding: var(--rozmiar-xxxs);
       }
+
+
 
     /* Main */
 
